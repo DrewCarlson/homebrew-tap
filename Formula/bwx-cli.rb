@@ -7,7 +7,7 @@
 class BwxCli < Formula
   desc "Unofficial Bitwarden CLI with first-class macOS support"
   homepage "https://github.com/drewcarlson/bwx-cli"
-  version "2.2.0"
+  version "2.2.1"
   license "MIT"
 
   # Linux needs pinentry for the master-password UI; macOS uses the
@@ -19,22 +19,22 @@ class BwxCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/drewcarlson/bwx-cli/releases/download/v#{version}/bwx-cli-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "341d7152fab4b8e126f77559df8a00895113092abaff0a8ed016bf649a72cfae"
+      sha256 "8ecda39b756de6dad8a67d00e51287517faae8d6c7f7fcba625cd94a5cd979cd"
     end
     on_intel do
       url "https://github.com/drewcarlson/bwx-cli/releases/download/v#{version}/bwx-cli-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "577ae72a137e0f6a8a5bce80dcbdbe33afafc76412c4777dc4850f67263a59cf"
+      sha256 "84ba0e30e9e486206cd4e269b22b2f5f112286da23b399b0c33cb19331366bec"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/drewcarlson/bwx-cli/releases/download/v#{version}/bwx-cli-#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "267a1a04f6002b5c5d58b9fa94ba4e124dbbb4f0323d32ebb0aae6dc8c94d31d"
+      sha256 "4562864dce46d262bc4f20f9af25e420db2b781d8b5b1ca3307a93dff9a32649"
     end
     on_intel do
       url "https://github.com/drewcarlson/bwx-cli/releases/download/v#{version}/bwx-cli-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "5bf4255aae32d4587d332d849373999ee268be381bba5e46dc7346755394facb"
+      sha256 "c9a1783568b578f539c132de7c4d363f0fd687f62187da1dbf0272b174ec567e"
     end
   end
 
